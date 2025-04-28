@@ -1,6 +1,173 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+@theme {
+  /* Base styles */
+  body {
+    font-family: theme(fontFamily.secondary);
+    color: theme(colors.neutral.400);
+    background-color: #e5e5e5;
+  }
 
+  h1, h2, h3, h4, h5, h6 {
+    font-family: theme(fontFamily.primary);
+    color: theme(colors.neutral.500);
+  }
+
+  /* Typography classes */
+  .h1 {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 800;
+    @screen lg {
+      font-size: 60px;
+      line-height: 62px;
+    }
+  }
+
+  .h2 {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 800;
+    @screen lg {
+      font-size: 50px;
+      line-height: 50px;
+    }
+  }
+
+  .h3 {
+    font-size: 38px;
+    line-height: 46px;
+    font-weight: 800;
+  }
+
+  .h4 {
+    font-size: 30px;
+    line-height: 46px;
+    font-weight: 800;
+  }
+
+  .h5 {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 800;
+  }
+
+  .h6 {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 700;
+  }
+
+  .text-body-sm {
+    font-family: theme(fontFamily.secondary);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .text-body-md {
+    font-family: theme(fontFamily.secondary);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .text-body-lg {
+    font-family: theme(fontFamily.secondary);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  /* Button styles */
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1px;
+  }
+
+  .btn-sm {
+    font-family: theme(fontFamily.primary);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 18px;
+    height: 42px;
+    padding-left: 30px;
+    padding-right: 30px;
+    letter-spacing: 1px;
+  }
+
+  .btn-lg {
+    font-family: theme(fontFamily.primary);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 18px;
+    height: 46px;
+    padding-left: 40px;
+    padding-right: 40px;
+    letter-spacing: 1px;
+  }
+
+  .btn-primary {
+    background-color: theme(colors.primary.200);
+    color: theme(colors.neutral.100);
+    &:hover {
+      background-color: color-mix(in srgb, theme(colors.primary.200) 90%, transparent);
+    }
+    transition: background-color 150ms ease;
+  }
+
+  .btn-secondary {
+    background-color: white;
+    color: theme(colors.neutral.500);
+    &:hover {
+      background-color: color-mix(in srgb, white 90%, transparent);
+    }
+    transition: background-color 150ms ease;
+  }
+
+  /* Link styles */
+  .link {
+    color: theme(colors.neutral.500);
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+  }
+
+  /* Section styles */
+  .section {
+    padding-bottom: 80px;
+    @screen md {
+      padding-bottom: 110px;
+    }
+    @screen lg {
+      padding-bottom: 180px;
+    }
+  }
+
+  .section-title-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: -20px; /* Equivalent to -space-x-20 */
+    margin-bottom: 50px;
+    @screen lg {
+      margin-bottom: 80px;
+    }
+  }
+
+  .section-title {
+    display: flex;
+    gap: -4px; /* Equivalent to -space-x-4 */
+  }
+}
+/* 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -68,4 +235,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
