@@ -30,6 +30,7 @@ const Home = () => {
 		<>
 			<Header />
 			<main>
+				{/* Hero Search Section */}
 				<section
 					ref={heroRef}
 					className={clsx(
@@ -123,6 +124,7 @@ const Home = () => {
 						</div>
 					</div>
 				</section>
+
 				{/* Catagories Section */}
 				<section>
 					<div
@@ -220,6 +222,7 @@ const Home = () => {
 					</div>
 				</section>
 
+				{/* Testimonial Section */}
 				<section
 					ref={testimonialRef}
 					className={clsx(
