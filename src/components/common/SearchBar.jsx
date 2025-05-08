@@ -1,13 +1,13 @@
 import clsx from "clsx";
 
-const SearchBar = ({ onChange, value, className, variant = "primary" }) => {
+const SearchBar = ({ onChange, value, className, placeholder, variant = "primary" }) => {
 	return (
 		<div className="relative w-full max-w-md">
 			<input
 				type="text"
 				value={value}
 				onChange={onChange}
-				placeholder={"Search products..."}
+				placeholder={placeholder}
 				className={clsx(
 					"w-full px-4 py-2 pl-5 font-primary font-medium transition-colors border",
 					{

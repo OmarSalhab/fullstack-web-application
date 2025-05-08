@@ -16,6 +16,8 @@ const Button = ({
 						variant === "primary",
 					"bg-primary text-secondary hover:text-primary hover:bg-secondary rounded-[50px]":
 						variant === "secondary",
+						"bg-secondary text-primary hover:text-secondary hover:bg-primary rounded-[50px]":
+						variant === "filled",
 				},
 				className
 			)}

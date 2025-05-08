@@ -35,11 +35,13 @@ const Header = () => {
 					</div>
 				</header>
 
-				{isMenuOpen && (
+				{isMenuOpen ? (
 					<div
 						className="fixed inset-0 bg-black bg-opacity-50 z-[5]"
 						onClick={handleMenu}
 					/>
+				) : (
+					<></>
 				)}
 
 				{/* Mobile Menu */}

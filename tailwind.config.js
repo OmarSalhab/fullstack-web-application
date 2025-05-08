@@ -6,7 +6,7 @@ export default {
 		colors: {
 			primary: "#ffffff", // White background
 			secondary: "black", // Slightly lighter dark
-      
+
 			textPrimary: "#1a1a1a", // Dark text
 			textSecondary: "#464646", // Light gray text
 		},
