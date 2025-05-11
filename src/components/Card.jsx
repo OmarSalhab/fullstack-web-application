@@ -1,7 +1,12 @@
 import Button from "./common/Button";
 import clsx from "clsx";
+import { useNavigate } from "react-router-dom";
+const Card = ({ id, image, title, description, price, categorie }) => {
+	const navigate = useNavigate();
+	const viewDetails = () => {
+		navigate("/product-info", { state: { id: id } });
+	};
 
-const Card = ({ image, title, description, price }) => {
 	return (
 		<div
 			className={clsx(
@@ -40,6 +45,7 @@ const Card = ({ image, title, description, price }) => {
 					>
 						{title}
 					</h3>
+					<div>{categorie}</div>
 					<p
 						className={clsx(
 							"font-primary text-secondary/80",
@@ -70,6 +76,7 @@ const Card = ({ image, title, description, price }) => {
 					<Button
 						variant="primary"
 						className="flex-1 text-sm md:text-base lg:text-sm"
+						onClick={viewDetails}
 					>
 						View Details
 					</Button>
