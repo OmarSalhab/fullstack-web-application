@@ -77,7 +77,7 @@ const Header = () => {
 					{["products", "home", "cart"].map((item) => (
 						<div
 							key={item}
-							className="w-full text-center  hover:text-textSecondary transition-colors"
+							className="w-full text-right  hover:text-textSecondary transition-colors"
 						>
 							<Link to={`/${item}`} onClick={handleMenu}>
 								{item.charAt(0).toUpperCase() + item.slice(1)}

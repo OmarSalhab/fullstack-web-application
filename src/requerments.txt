@@ -1,6 +1,8 @@
 -install react-router-dom for routes.*
 -install clsx for good tailwind styling.*
 -learn how to do the system desgin in new tailwind version.*
--create and separate the backend folder and the frontend folder.
--create the backend folder.
- 
+-create and separate the backend folder and the frontend folder.*
+-create the backend folder.*
+-connecting to the mongodb database.
+-adding the role based auth routing system.
+-creating the Users, Products schemas.
