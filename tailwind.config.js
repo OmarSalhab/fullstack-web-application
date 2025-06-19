@@ -4,15 +4,15 @@ export default {
 
 	theme: {
 		colors: {
-			primary: "#ffffff", // White background
-			secondary: "black", // Slightly lighter dark
+			primary: "#ffffff", 
+			secondary: "black", 
 
-			textPrimary: "#1a1a1a", // Dark text
-			textSecondary: "#464646", // Light gray text
+			textPrimary: "#1a1a1a", 
+			textSecondary: "#464646",
 		},
 		fontFamily: {
-			primary: ["Inter", "sans-serif"], // For headings
-			secondary: ["Roboto", "sans-serif"], // For body text
+			primary: ["Inter", "sans-serif"], 
+			secondary: ["Roboto", "sans-serif"],
 		},
 
 		borderRadius: {
@@ -23,13 +23,13 @@ export default {
 		},
 
 		screens: {
-			sm: "630px", // Small devices
-			md: "768px", // Tablets
-			lg: "1024px", // Laptops
-			xl: "1280px", // Desktops
+			sm: "630px", 
+			md: "768px", 
+			lg: "1024px",
+			xl: "1280px",
 		},
 		extend: {
-			// Custom Spacing Scale
+			
 			spacing: {
 				4: "1rem",
 				8: "2rem",
@@ -37,10 +37,10 @@ export default {
 				16: "4rem",
 				24: "6rem",
 			},
-			// Custom Box Shadows
+			
 			boxShadow: {
-				card: "0 4px 6px rgba(0, 0, 0, 0.1)", // Subtle shadow for cards
-				button: "0 2px 4px rgba(0, 0, 0, 0.2)", // Shadow for buttons
+				card: "0 4px 6px rgba(0, 0, 0, 0.1)", 
+				button: "0 2px 4px rgba(0, 0, 0, 0.2)",
 			},
 		},
 	},

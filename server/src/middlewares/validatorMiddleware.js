@@ -7,8 +7,8 @@ const emailValidator = () => {
 const nameValidator = () => {
 	return body("name")
 		.trim()
-		.isLength({ min: 2 })
-		.withMessage("Name must be at least 2 characters long")
+		.isLength({ min: 4 })
+		.withMessage("Name must be at least 4 characters long")
 		.matches(/^[A-Za-z\s]+$/)
 		.withMessage("Name must contain only letters and spaces");
 };
@@ -16,11 +16,7 @@ const nameValidator = () => {
 const passwordValidator = () => {
 	return body("password")
 		.isLength({ min: 6 })
-		.withMessage("Password must be at least 6 characters long")
-		.matches(/[A-Z]/)
-		.withMessage("Password must contain at least one uppercase letter")
-		.matches(/[!@#$%^&*(),.?":{}|<>]/)
-		.withMessage("Password must contain at least one special character");
+		.withMessage("Password must be at least 6 characters long");
 };
 
 const validate = (req, res, next) => {

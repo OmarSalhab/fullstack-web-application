@@ -1,19 +1,21 @@
 const express = require("express");
 const cors = require("cors");
 const dotenv = require("dotenv");
-const { dbConnect, dbDisconnect } = require("./src/config/db");
+const { dbConnect } = require("./src/config/db");
 const globalAsyncErrorHandler = require('./src/middlewares/errorMiddleware.js')
-const productRoutes = require("./src/routes/product.route.js");
-const userRoutes = require("./src/routes/user.route.js");
+
 dotenv.config({ path: ".\\src\\config\\.env" });
 const PORT = process.env.PORT || 9000;
 const app = express();
 
 app.use(cors());
 app.use(express.json());
+app.use(require('cookie-parser')());
 
-app.use("/api/products", productRoutes);
-app.use("/api/users", userRoutes);
+app.use("/api/products", require("./src/routes/product.route.js"));
+app.use("/api/Auth", require("./src/routes/auth.route.js"));
+app.use("/api/user", require("./src/routes/user.route.js"));
+
 app.use(globalAsyncErrorHandler);
 
 app.listen(PORT, async () => {

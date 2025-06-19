@@ -6,6 +6,7 @@ const useWindow = () => {
 		const handleWindow = () => {
 			setIsMobile(window.innerWidth <= 630);
 		};
+		
 		window.addEventListener("resize", handleWindow);
 		return () => window.removeEventListener("resize", handleWindow);
 	}, []);

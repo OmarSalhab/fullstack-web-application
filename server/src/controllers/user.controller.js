@@ -4,47 +4,6 @@ const bcrypt = require("bcryptjs");
 const dotenv = require("dotenv");
 dotenv.config({ path: "..\\config\\.env" });
 
-const signupUser = async (req, res) => {
-	const { name, email, password } = req.body;
-	const user = { name, email, password };
-	// implement otp email verfiyng
-	user.role = "user";
-	const newUser = new User(user);
-	await newUser.save();
-	res
-		.status(200)
-		.json({ success: true, message: "Succsesfully added new user" });
-};
-
-const loginUser = async (req, res) => {
-	const { email, password } = req.body;
-	const user = await User.findOne({ email: email });
-	if (!user) {
-		const err = new Error("User not found, Faild to login");
-		err.statusCode = 404;
-		throw err;
-	}
-	const isMatch = await bcrypt.compare(password, user.password);
-	if (!isMatch) {
-		{
-			const err = new Error("Invalid Password");
-			err.statusCode = 401;
-			throw err;
-		}
-	}
-	const token = generateToken(user._id);
-	res.json({
-		success: true,
-		token,
-		user: {
-			id: user._id,
-			name: user.name,
-			email: user.email,
-			role: user.role,
-		},
-	});
-};
-
 const getUserName = async (req, res) => {
 	const userId = req.params.id;
 	if (req.user._id.toString() !== userId) {
@@ -138,11 +97,9 @@ const deleteUser = async (req, res) => {
 };
 
 module.exports = {
-	signupUser,
 	getUserById,
 	getAllUsers,
 	getUserName,
-	loginUser,
 	updateUserInfo,
 	deleteUser,
 };

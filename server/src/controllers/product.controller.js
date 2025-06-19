@@ -1,8 +1,7 @@
-/** IMPLEMENT A LOT OF PRODUCTS CONTROLLERS */
 const User = require("../models/User");
 const Product = require("../models/Product");
 
-const getProducts = async (req, res) => {
+const productsQueryAll = async (req, res) => {
 	const { category, minPrice, maxPrice, search } = req.query;
 	const filter = {};
 
@@ -15,9 +14,9 @@ const getProducts = async (req, res) => {
 	res.json({ success: true, data: products });
 };
 
-const getProductById = async (req, res) => {
+const productQueryById = async (req, res) => {
 	const userId = req.params.id;
-	const product = await Product.findById({ _id: userId });
+	const product = await Product.findById(userId);
 	res.json({ success: true, data: product });
 };
 
@@ -83,11 +82,12 @@ const deleteCartProdut = async (req, res) => {
 };
 
 const deleteWishListProdut = async (req, res) => {};
+
 const addToWishlist = async (req, res) => {};
 
 module.exports = {
-	getProducts,
-	getProductById,
+	productsQueryAll,
+	productQueryById,
 	addToCart,
 	deleteCartProdut,
 	deleteWishListProdut,

@@ -4,8 +4,12 @@ const dotenv = require("dotenv");
 dotenv.config({ path: "..\\config\\.env" });
 const asyncHandler = require("express-async-handler");
 
-const generateToken = (userId) => {
-	return jwt.sign({ id: userId }, process.env.JWT_SECRET, { expiresIn: "7d" });
+const generateAccess = (userId) => {
+	return jwt.sign({ id: userId }, process.env.JWT_ACCESS, { expiresIn: "15m" });
+};
+
+const generateRefresh = (userId) => {
+	return jwt.sign({ id: userId }, process.env.JWT_REFRESH, { expiresIn: "7d" });
 };
 
 const protect = async (req, res, next) => {
@@ -44,4 +48,4 @@ const isAuthorizedAdmin = asyncHandler(async (req, res, next) => {
 	}
 });
 
-module.exports = { generateToken, protect, isAuthorizedAdmin };
+module.exports = { generateAccess,generateRefresh, protect, isAuthorizedAdmin };
