@@ -82,7 +82,7 @@ const getAllUsers = async (req, res) => {
 
 const deleteUser = async (req, res) => {
 	const userId = req.params.id;
-	if(req.params.id == req.user._id.toString()){
+	if (req.params.id == req.user._id.toString()) {
 		const err = new Error("This action can't be done");
 		err.statusCode = 401;
 		throw err;

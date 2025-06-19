@@ -6,10 +6,10 @@ const { protect } = require("../middlewares/authMiddleware");
 const {
 	productsQueryAll,
 	productQueryById,
-	addToCart,
-	addToWishlist,
-	deleteCartProdut,
-	deleteWishListProdut,
+	addOneToCart,
+	addOneToWishlist,
+	deleteOneFromCart,
+	deleteOneFromWishlist,
 } = require("../controllers/product.controller");
 
 //Guest Role Queries
@@ -28,12 +28,24 @@ router.get("/:id", asyncHandler(productQueryById));
 //User Role Queries
 //-------------------------------------------
 
-router.post("/cart/:id", protect, asyncHandler(addToCart));
+// @route 	POST api/products/:id
+// @desc 	POST one product to cartlist
+// @access  Private
+router.post("/:id", protect, asyncHandler(addOneToCart));
 
-router.post("/wishlist/:id", protect, asyncHandler(addToWishlist));
+// @route 	POST api/products/wishlist/:id
+// @desc 	POST one product to wishlist
+// @access  Private
+router.post("/wishlist/:id", protect, asyncHandler(addOneToWishlist));
 
-router.delete("/cart/:id", protect, asyncHandler(deleteCartProdut));
+// @route 	DELETE api/products/:id
+// @desc 	DELETE one product from cartlist
+// @access  Private
+router.delete("/:id", protect, asyncHandler(deleteOneFromCart));
 
-router.delete("/wishlist/:id", protect, asyncHandler(deleteWishListProdut));
+// @route 	DELETE api/products/wishlist/:id
+// @desc 	DELETE one product from wishlist
+// @access  Private
+router.delete("/wishlist/:id", protect, asyncHandler(deleteOneFromWishlist));
 
 module.exports = router;

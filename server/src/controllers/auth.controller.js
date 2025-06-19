@@ -59,7 +59,6 @@ const loginUser = async (req, res) => {
 
 const refreshAccessToken = (req, res) => {
 	const { refreshToken } = req.cookies;
-	console.log(refreshToken);
 
 	if (!refreshToken) return res.status(401).json({ msg: "No refresh token" });
 
@@ -68,7 +67,10 @@ const refreshAccessToken = (req, res) => {
 	dotenv.config({ path: "..\\config\\.env" });
 
 	jwt.verify(refreshToken, process.env.JWT_REFRESH, async (err, userJwt) => {
-		if (err) return res.status(403).json({ msg: "Invalid refresh token" });
+		if (err)
+			return res
+				.status(403)
+				.json({ success: false, message: "Invalid refresh token" });
 
 		const user = await User.findById(userJwt.id).select("-password");
 
@@ -78,6 +80,22 @@ const refreshAccessToken = (req, res) => {
 	});
 };
 
-const logout = async (req, res) => {};
+const logout = async (req, res) => {
+	const { refreshToken } = req.cookies;
+
+	if (!refreshToken)
+		return res
+			.status(401)
+			.json({ success: false, message: "No refresh token" });
+
+	res.clearCookie("refreshToken", {
+		httpOnly: true,
+		sameSite: "None",
+		secure: true,
+		maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days
+	});
+
+	res.json({ success: true, message: "Refresh-Token cleared successfully" });
+};
 
 module.exports = { registerUser, loginUser, refreshAccessToken, logout };

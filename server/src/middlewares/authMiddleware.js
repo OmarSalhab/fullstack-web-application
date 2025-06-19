@@ -27,7 +27,7 @@ const protect = async (req, res, next) => {
 			.json({ success: false, message: "Not authorized, no token" });
 	}
 	try {
-		const decoded = jwt.verify(token, process.env.JWT_SECRET);
+		const decoded = jwt.verify(token, process.env.JWT_ACCESS);
 		req.user = await User.findById(decoded.id).select("-password");
 		next();
 	} catch (error) {
@@ -48,4 +48,9 @@ const isAuthorizedAdmin = asyncHandler(async (req, res, next) => {
 	}
 });
 
-module.exports = { generateAccess,generateRefresh, protect, isAuthorizedAdmin };
+module.exports = {
+	generateAccess,
+	generateRefresh,
+	protect,
+	isAuthorizedAdmin,
+};
