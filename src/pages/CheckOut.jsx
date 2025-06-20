@@ -1,9 +1,5 @@
-import Footer from "../components/Footer";
+const Checkout = () => {
+	return (<></>);
+};
 
-const CheckOut = () => {
-    return ( <>
-    <Footer/>
-    </> );
-}
- 
-export default CheckOut;
+export default Checkout;

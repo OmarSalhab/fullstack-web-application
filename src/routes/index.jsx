@@ -1,25 +1,78 @@
-import CartPage from "../containers/CartPage";
-import HomePage from "../containers/HomePage";
-import CheckOutPage from "../containers/CheckOutPage";
-import ProductInfoPage from "../containers/ProductInfoPage";
-import ProductsListPage from "../containers/ProductsListPage";
-import NotFoundPage from "../containers/NotFoundPage";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {
+	HomeLayout,
+	Landing,
+	About,
+	Products,
+	SingleProduct,
+	Cart,
+	Checkout,
+	Orders,
+	Login,
+	Register,
+	NotFound,
+} from "../pages";
 
-const ReactComponent = () => {
+const router = createBrowserRouter([
+	{
+		path: "/",
+		element: <HomeLayout />,
+		children: [
+			{
+				index: true,
+				element: <Landing />,
+				loader: null,
+			},
+			{
+				path: "about",
+				element: <About />,
+			},
+			{
+				path: "products",
+				element: <Products />,
+				loader: null,
+			},
+			{
+				path: "products/:id",
+				element: <SingleProduct />,
+				loader: null,
+			},
+			{
+				path: "cart",
+				element: <Cart />,
+				loader: null,
+			},
+			{
+				path: "checkout",
+				element: <Checkout />,
+			},
+			{
+				path: "orders",
+				element: <Orders />,
+				loader: null,
+			},
+		],
+	},
+	{
+		path: "/login",
+		element: <Login />,
+	},
+	{
+		path: "/register",
+		element: <Register />,
+	},
+	{
+		path: "*",
+		element: <NotFound />,
+	},
+]);
+
+const DataRouting = () => {
 	return (
-		<BrowserRouter>
-			<Routes>
-				<Route path="/" index={true} element={<HomePage />} />
-				<Route path="/home" element={<HomePage />} />
-				<Route path="/products" element={<ProductsListPage />} />
-				<Route path="/product-info" element={<ProductInfoPage />} />
-				<Route path="/cart" element={<CartPage />} />
-				<Route path="/checkout" element={<CheckOutPage />} />
-				<Route path="/*" element={<NotFoundPage />} />
-			</Routes>
-		</BrowserRouter>
+		<>
+			<RouterProvider router={router} />
+		</>
 	);
 };
 
-export default ReactComponent;
+export default DataRouting;

@@ -16,14 +16,16 @@ const {
 	nameValidator,
 } = require("../middlewares/validatorMiddleware");
 
-const { protect, isAuthorizedAdmin } = require("../middlewares/authMiddleware");
 
 //User Role Queries
-router.get("/:id/profile", protect, asyncHandler(getUserById));
-router.get("/:id/name", protect, asyncHandler(getUserName));
+//-------------------------------------------
+const { protect, isAuthorizedAdmin } = require("../middlewares/authMiddleware");
 
+// @route    PUT api/user/me
+// @desc     Update user information
+// @access   Private
 router.put(
-	"/:id/profile",
+	"/me",
 	nameValidator(),
 	emailValidator(),
 	passwordValidator(),
@@ -32,16 +34,16 @@ router.put(
 );
 
 //Admin Role Queries
+//-------------------------------------------
+
+// @route    GET api/user
+// @desc     Get all user
+// @access   Private
 router.get("/", protect, isAuthorizedAdmin, asyncHandler(getAllUsers));
 
-router.put(
-	"/:id/admin",
-	protect,
-	isAuthorizedAdmin,
-	asyncHandler(updateUserInfo)
-);
-// router.put("/:id/admin",protect, isAuthorizedAdmin, asyncHandler(updateUserInfo));
-
+// @route    DELETE api/user
+// @desc     Delete one user
+// @access   Private
 router.delete("/:id", protect, isAuthorizedAdmin, asyncHandler(deleteUser));
 
 module.exports = router;

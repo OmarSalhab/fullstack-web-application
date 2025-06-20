@@ -1,9 +1,9 @@
 import "./App.css";
-import ReactComponent from "./routes";
+import DataRouting from "./routes";
 function App() {
 	return (
 		<>
-			<ReactComponent />
+			<DataRouting />
 		</>
 	);
 }

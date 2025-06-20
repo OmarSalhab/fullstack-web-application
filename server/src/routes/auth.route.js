@@ -16,13 +16,12 @@ const {
 	validate,
 } = require("../middlewares/validatorMiddleware");
 
-const { protect } = require("../middlewares/authMiddleware");
 
 //Guest Role Queries
 //-------------------------------------------
 
 // @route 	POST api/auth/register
-// @desc 	POST new user
+// @desc 	Post new user
 // @access  Public
 router.post(
 	"/register",
@@ -34,10 +33,10 @@ router.post(
 );
 
 // @route 	POST api/auth/login
-// @desc 	POST signIn user { Response-Data: Access-Token, Refresh-Token, User-Document }
+// @desc 	Post signIn user { Response-Data: Access-Token, Refresh-Token, User-Document }
 // @access  Public
 router.post(
-	"/login",
+    "/login",
 	emailValidator(),
 	passwordValidator(),
 	validate,
@@ -45,15 +44,16 @@ router.post(
 );
 
 // @route 	GET api/auth/refresh
-// @desc 	GET new Access-Token { Response-Data: Access-Token, User-Document }
+// @desc 	Get new Access-Token { Response-Data: Access-Token, User-Document }
 // @access  Public
 router.get("/refresh", asyncHandler(refreshAccessToken));
 
 //User Role Queries
 //-------------------------------------------
+const { protect } = require("../middlewares/authMiddleware");
 
 // @route 	POST api/auth/logout
-// @desc 	POST logout user *Clear Refresh-Token From Cookies*
+// @desc 	Post logout user *Clear Refresh-Token From Cookies*
 // @access  Private
 router.post("/logout", protect, asyncHandler(logout));
 

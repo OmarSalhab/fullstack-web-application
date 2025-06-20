@@ -1,8 +1,10 @@
 const Product = require("./src/models/Product");
 const products = require("./src/data/products.json");
 const { dbConnect } = require("./src/config/db");
+
 const dotenv = require("dotenv");
 dotenv.config({ path: ".\\src\\config\\.env" });
+
 const dbSeeding = async () => {
 	try {
 		await dbConnect();
@@ -16,7 +18,7 @@ const dbSeeding = async () => {
 	} catch (error) {
 		console.log(`error : ${error.message}`);
 	}
-	console.log("database seeded complitly");
+	console.log("Products seeded complitly");
 };
 
 dbSeeding();
