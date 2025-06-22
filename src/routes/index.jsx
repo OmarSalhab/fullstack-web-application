@@ -1,4 +1,7 @@
+import { useLayoutEffect } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import customFetch from "../utils/apiClient";
+
 import {
 	HomeLayout,
 	Landing,
@@ -52,6 +55,7 @@ const router = createBrowserRouter([
 				loader: null,
 			},
 		],
+		loader:
 	},
 	{
 		path: "/login",
@@ -68,11 +72,15 @@ const router = createBrowserRouter([
 ]);
 
 const DataRouting = () => {
-	return (
-		<>
-			<RouterProvider router={router} />
-		</>
-	);
+
+	useLayoutEffect(()=>{
+
+	},[]);
+
+	useLayoutEffect(()=>{
+
+	},[]);
+	return <RouterProvider router={router} />;
 };
 
 export default DataRouting;
