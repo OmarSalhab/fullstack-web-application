@@ -1,5 +1,5 @@
 const SingleProduct = () => {
-    return (  );
+    return ( <></> );
 }
  
 export default SingleProduct;

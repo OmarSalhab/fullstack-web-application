@@ -51,9 +51,8 @@ const loginUser = async (req, res) => {
 	const accessToken = generateAccess(user._id);
 
 	res.json({
-		success: true,
-		accessToken,
 		user,
+		accessToken,
 	});
 };
 

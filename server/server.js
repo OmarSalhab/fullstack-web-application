@@ -6,9 +6,11 @@ const dotenv = require("dotenv");
 dotenv.config({ path: ".\\src\\config\\.env" });
 
 const PORT = process.env.PORT || 9000;
+const corsConfig ={credentials:true, origin:"http://localhost:5173"};
+
 const app = express();
 
-app.use(cors());
+app.use(cors(corsConfig));
 app.use(express.json());
 app.use(require('cookie-parser')());
 
