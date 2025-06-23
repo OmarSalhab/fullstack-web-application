@@ -1,5 +1,9 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
+import store from "../store";
+import {
+	createBrowserRouter,
+	RouterProvider,
+	redirect,
+} from "react-router-dom";
 
 import {
 	HomeLayout,
@@ -14,6 +18,17 @@ import {
 	Register,
 	NotFound,
 } from "../pages";
+
+const protectedLoader = (store) => {
+	return () => {
+		const state = store.getState();
+		const user = state.user;
+		if (!user || !state.token) {
+			return redirect("/login");
+		}
+		return null; // allow access
+	};
+};
 
 const router = createBrowserRouter([
 	{
@@ -47,21 +62,29 @@ const router = createBrowserRouter([
 			{
 				path: "checkout",
 				element: <Checkout />,
+				loader: async (args) => {
+					protectedLoader(store);
+				},
+				action: undefined,
 			},
 			{
 				path: "orders",
 				element: <Orders />,
-				loader: undefined,
+				loader: async (args) => {
+					protectedLoader(store);
+				},
 			},
 		],
 	},
 	{
 		path: "/login",
 		element: <Login />,
+		action: undefined,
 	},
 	{
 		path: "/register",
 		element: <Register />,
+		action: undefined,
 	},
 	{
 		path: "*",
@@ -70,7 +93,6 @@ const router = createBrowserRouter([
 ]);
 
 const DataRouting = () => {
-
 	return <RouterProvider router={router} />;
 };
 
