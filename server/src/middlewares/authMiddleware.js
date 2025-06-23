@@ -5,11 +5,11 @@ dotenv.config({ path: "..\\config\\.env" });
 const asyncHandler = require("express-async-handler");
 
 const generateAccess = (userId) => {
-	return jwt.sign({ id: userId }, process.env.JWT_ACCESS, { expiresIn: "15m" });
+	return jwt.sign({ id: userId }, process.env.JWT_ACCESS, { expiresIn: "15s" });
 };
 
 const generateRefresh = (userId) => {
-	return jwt.sign({ id: userId }, process.env.JWT_REFRESH, { expiresIn: "7d" });
+	return jwt.sign({ id: userId }, process.env.JWT_REFRESH, { expiresIn: "10m" });
 };
 
 const protect = async (req, res, next) => {
@@ -24,16 +24,16 @@ const protect = async (req, res, next) => {
 	if (!token) {
 		return res
 			.status(401)
-			.json({ success: false, message: "Not authorized, no token" });
+			.json({ success: false, message: "Not authorized" });
 	}
 	try {
 		const decoded = jwt.verify(token, process.env.JWT_ACCESS);
 		req.user = await User.findById(decoded.id).select("-password");
 		next();
-	} catch (error) {
+	} catch {
 		return res
 			.status(401)
-			.json({ success: false, message: "Not authorized, token failed" });
+			.json({ success: false, message: "Not authorized" });
 	}
 };
 

@@ -45,7 +45,7 @@ const loginUser = async (req, res) => {
 		httpOnly: true,
 		sameSite: "None",
 		secure: true,
-		maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days
+		maxAge: 10 * 60 * 1000, // 10 min
 	});
 
 	const accessToken = generateAccess(user._id);
@@ -75,26 +75,20 @@ const refreshAccessToken = (req, res) => {
 
 		const accessToken = generateAccess(userJwt.id);
 
-		res.json({ success: true, accessToken, user });
+		res.json({ accessToken, user });
 	});
 };
 
 const logout = async (req, res) => {
-	const { refreshToken } = req.cookies;
-
-	if (!refreshToken)
-		return res
-			.status(401)
-			.json({ success: false, message: "No refresh token" });
-
+	
 	res.clearCookie("refreshToken", {
 		httpOnly: true,
 		sameSite: "None",
 		secure: true,
-		maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days
+		maxAge: 10 * 60 * 1000, // 10 min
 	});
 
-	res.json({ success: true, message: "Refresh-Token cleared successfully" });
+	res.status(200).json({ success: true, message: "Refresh-Token cleared successfully" });
 };
 
 module.exports = { registerUser, loginUser, refreshAccessToken, logout };
