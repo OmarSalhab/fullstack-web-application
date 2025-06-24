@@ -1,10 +1,11 @@
 import store from "../store";
 import {
-	createBrowserRouter,
+	createBrowserRouter, 
 	RouterProvider,
 	redirect,
 } from "react-router-dom";
 
+//PAGES ROUTES
 import {
 	HomeLayout,
 	Landing,
@@ -18,6 +19,10 @@ import {
 	Register,
 	NotFound,
 } from "../pages";
+
+//LOADERS
+
+//ACTIONS
 
 const protectedLoader = (store) => {
 	return () => {
