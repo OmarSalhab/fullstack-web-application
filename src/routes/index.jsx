@@ -1,6 +1,6 @@
 import store from "../store";
 import {
-	createBrowserRouter, 
+	createBrowserRouter,
 	RouterProvider,
 	redirect,
 } from "react-router-dom";
@@ -17,8 +17,10 @@ import {
 	Orders,
 	Login,
 	Register,
-	NotFound,
+	Error,
 } from "../pages";
+
+import { ErrorElement } from "../components";
 
 //LOADERS
 
@@ -39,12 +41,13 @@ const router = createBrowserRouter([
 	{
 		path: "/",
 		element: <HomeLayout />,
+		errorElement: <Error />,
 		loader: undefined,
 		children: [
 			{
 				index: true,
 				element: <Landing />,
-				
+				errorElement: <ErrorElement />,
 				loader: undefined,
 			},
 			{
@@ -54,11 +57,13 @@ const router = createBrowserRouter([
 			{
 				path: "products",
 				element: <Products />,
+				errorElement: <ErrorElement />,
 				loader: undefined,
 			},
 			{
 				path: "products/:id",
 				element: <SingleProduct />,
+				errorElement: <ErrorElement />,
 				loader: undefined,
 			},
 			{
@@ -86,16 +91,14 @@ const router = createBrowserRouter([
 	{
 		path: "/login",
 		element: <Login />,
+		errorElement: <Error />,
 		action: undefined,
 	},
 	{
 		path: "/register",
 		element: <Register />,
+		errorElement: <Error />,
 		action: undefined,
-	},
-	{
-		path: "*",
-		element: <NotFound />,
 	},
 ]);
 
