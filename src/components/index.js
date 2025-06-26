@@ -5,3 +5,5 @@ export {default as Header} from './Header';
 export {default as Loading} from './Loading';
 export {default as NavBar} from './NavBar';
 export {default as NavLinks} from './NavLinks';
+export {default as FeaturedProducts} from './FeaturedProducts';
+export {default as Filters} from './Filters';

@@ -1,107 +1,267 @@
 [
-  {
-    "image": "https://images.unsplash.com/photo-1585275481315-1a991a404144?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
-    "title": "Navy Blue Casual Suit",
-    "description": "A comfortable and stylish navy blue suit perfect for casual outings. Made with breathable cotton fabric.",
-    "price": 149.99,
-    "categorie": "Casual"
-  },
-  {
-    "image": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
-    "title": "Classic Black Wedding Suit",
-    "description": "An elegant black suit tailored for weddings. Features a satin lapel and a refined fit.",
-    "price": 299.99,
-    "categorie": "Wedding"
-  },
-  {
-    "image": "https://images.unsplash.com/photo-1660942871134-535899783065?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-    "title": "Light Gray Summer Suit",
-    "description": "A lightweight light gray suit ideal for summer events. Crafted from linen for maximum comfort.",
-    "price": 179.99,
-    "categorie": "Summer"
-  },
-  {
-    "image": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
-    "title": "Navy Pinstripe Business Suit",
-    "description": "A professional navy pinstripe suit designed for business meetings. Made with high-quality wool.",
-    "price": 349.99,
-    "categorie": "Business"
-  },
-  {
-    "image": "https://images.unsplash.com/photo-1560264234-b56f90d70498?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
-    "title": "Beige Casual Linen Suit",
-    "description": "A relaxed beige linen suit perfect for warm weather casual occasions. Features a soft, unstructured design.",
-    "price": 159.99,
-    "categorie": "Casual"
-  },
-  {
-    "image": "https://images.unsplash.com/photo-1556797174-4444018a74e7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
-    "title": "Burgundy Velvet Wedding Suit",
-    "description": "A luxurious burgundy velvet suit ideal for making a statement at weddings. Features a shawl lapel and a slim fit.",
-    "price": 399.99,
-    "categorie": "Wedding"
-  },
-  {
-    "image": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
-    "title": "White Summer Seersucker Suit",
-    "description": "A classic white seersucker suit perfect for summer parties and events. Lightweight and breathable.",
-    "price": 189.99,
-    "categorie": "Summer"
-  },
-  {
-    "image": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
-    "title": "Charcoal Gray Business Suit",
-    "description": "A versatile charcoal gray suit suitable for a range of business settings. Made with durable wool blend.",
-    "price": 279.99,
-    "categorie": "Business"
-  },
-  {
-    "image": "https://images.unsplash.com/photo-1585275481315-1a991a404144?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
-    "title": "Olive Green Casual Suit",
-    "description": "A trendy olive green suit perfect for casual Fridays or weekend outings. Features a modern, slim fit.",
-    "price": 169.99,
-    "categorie": "Casual"
-  },
-  {
-    "image": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
-    "title": "Midnight Blue Wedding Tuxedo",
-    "description": "A sophisticated midnight blue tuxedo perfect for formal weddings. Features a peak lapel and a tailored fit.",
-    "price": 449.99,
-    "categorie": "Wedding"
-  },
-  {
-    "image": "https://images.unsplash.com/photo-1660942871134-535899783065?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-    "title": "Light Blue Summer Cotton Suit",
-    "description": "A refreshing light blue cotton suit ideal for summer days. Breathable and comfortable for all-day wear.",
-    "price": 159.99,
-    "categorie": "Summer"
-  },
-  {
-    "image": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
-    "title": "Dark Gray Business Checkered Suit",
-    "description": "A stylish dark gray checkered suit suitable for making a statement in the office. Made with a fine wool blend.",
-    "price": 329.99,
-    "categorie": "Business"
-  },
-  {
-    "image": "https://images.unsplash.com/photo-1585275481315-1a991a404144?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
-    "title": "Rust Colored Casual Suit",
-    "description": "A unique rust colored suit perfect for adding some color to your casual wardrobe. Comfortable and stylish.",
-    "price": 179.99,
-    "categorie": "Casual"
-  },
-  {
-    "image": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
-    "title": "Ivory Wedding Suit",
-    "description": "A sophisticated ivory suit perfect for a destination wedding. Lightweight and elegant.",
-    "price": 419.99,
-    "categorie": "Wedding"
-  },
-  {
-    "image": "https://images.unsplash.com/photo-1660942871134-535899783065?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-    "title": "Mint Green Summer Suit",
-    "description": "A refreshing mint green suit ideal for summer parties. Made with breathable linen.",
-    "price": 199.99,
-    "categorie": "Summer"
-  }
+	{
+		"title": "avant-garde lamp",
+		"company": "Modenza",
+		"description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
+		"featured": true,
+		"publishedAt": "2025-06-26T10:07:44.157Z",
+		"category": "Kids",
+		"image": "https://images.pexels.com/photos/943150/pexels-photo-943150.jpeg?auto=compress&cs=tinysrgb&w=1600",
+		"price": "17999",
+		"shipping": false,
+		"colors": ["#33FF57", "#3366FF"]
+	},
+	{
+		"title": "chic chair",
+		"company": "Luxora",
+		"description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
+		"featured": false,
+		"publishedAt": "2025-06-26T10:07:44.157Z",
+		"category": "Chairs",
+		"image": "https://images.pexels.com/photos/5705090/pexels-photo-5705090.jpeg?auto=compress&cs=tinysrgb&w=1600",
+		"price": "33999",
+		"shipping": true,
+		"colors": ["#FF5733", "#33FF57", "#3366FF"]
+	},
+	{
+		"title": "coffee table",
+		"company": "Modenza",
+		"description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
+		"featured": true,
+		"publishedAt": "2025-06-26T10:07:44.157Z",
+		"category": "Tables",
+		"image": "https://images.pexels.com/photos/3679601/pexels-photo-3679601.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+		"price": "17999",
+		"shipping": false,
+		"colors": ["#FF5733", "#FFFF00"]
+	},
+	{
+		"title": "comfy bed",
+		"company": "Homestead",
+		"description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
+		"featured": true,
+		"publishedAt": "2025-06-26T10:07:44.157Z",
+		"category": "Beds",
+		"image": "https://images.pexels.com/photos/1034584/pexels-photo-1034584.jpeg?auto=compress&cs=tinysrgb&w=1600",
+		"price": "12999",
+		"shipping": false,
+		"colors": ["#FF5733"]
+	},
+	{
+		"title": "contemporary sofa",
+		"company": "Comfora",
+		"description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
+		"featured": false,
+		"publishedAt": "2025-06-26T10:07:44.157Z",
+		"category": "Sofas",
+		"image": "https://images.pexels.com/photos/1571459/pexels-photo-1571459.jpeg?auto=compress&cs=tinysrgb&w=1600",
+		"price": "15999",
+		"shipping": false,
+		"colors": ["#FFFF00"]
+	},
+	{
+		"title": "cutting-edge bed",
+		"company": "Homestead",
+		"description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
+		"featured": false,
+		"publishedAt": "2025-06-26T10:07:44.157Z",
+		"category": "Beds",
+		"image": "https://images.pexels.com/photos/2029694/pexels-photo-2029694.jpeg?auto=compress&cs=tinysrgb&w=1600",
+		"price": "8499",
+		"shipping": true,
+		"colors": ["#FFFF00", "#3366FF"]
+	},
+	{
+		"title": "futuristic shelves",
+		"company": "Luxora",
+		"description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
+		"featured": false,
+		"publishedAt": "2025-06-26T10:07:44.157Z",
+		"category": "Kids",
+		"image": "https://images.pexels.com/photos/2177482/pexels-photo-2177482.jpeg?auto=compress&cs=tinysrgb&w=1600",
+		"price": "9499",
+		"shipping": true,
+		"colors": ["#33FF57", "#FFFF00"]
+	},
+	{
+		"title": "glass table",
+		"company": "Modenza",
+		"description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
+		"featured": false,
+		"publishedAt": "2025-06-26T10:07:44.157Z",
+		"category": "Tables",
+		"image": "https://images.pexels.com/photos/1571452/pexels-photo-1571452.jpeg?auto=compress&cs=tinysrgb&w=1600",
+		"price": "15999",
+		"shipping": false,
+		"colors": ["#FF5733", "#3366FF"]
+	},
+	{
+		"title": "King Bed",
+		"company": "Homestead",
+		"description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
+		"featured": false,
+		"publishedAt": "2025-06-26T10:07:44.157Z",
+		"category": "Beds",
+		"image": "https://images.pexels.com/photos/6489083/pexels-photo-6489083.jpeg?auto=compress&cs=tinysrgb&w=1600",
+		"price": "18999",
+		"shipping": true,
+		"colors": ["#FF5733"]
+	},
+	{
+		"title": "Lounge Chair",
+		"company": "Luxora",
+		"description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
+		"featured": false,
+		"publishedAt": "2025-06-26T10:07:44.157Z",
+		"category": "Chairs",
+		"image": "https://images.pexels.com/photos/2082090/pexels-photo-2082090.jpeg?auto=compress&cs=tinysrgb&w=1600",
+		"price": "25999",
+		"shipping": false,
+		"colors": ["#FF5733", "#33FF57", "#3366FF"]
+	},
+
+	{
+		"title": "Minimalist Shelves",
+		"company": "Artifex",
+		"description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
+		"featured": false,
+		"publishedAt": "2025-06-26T10:07:44.157Z",
+		"category": "Kids",
+		"image": "https://images.pexels.com/photos/439227/pexels-photo-439227.jpeg?auto=compress&cs=tinysrgb&w=1600",
+		"price": "43999",
+		"shipping": false,
+		"colors": ["#FF5733", "#FFFF00"]
+	},
+	{
+		"title": "modern sofa",
+		"company": "Comfora",
+		"description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
+		"featured": false,
+		"publishedAt": "2025-06-26T10:07:44.157Z",
+		"category": "Sofas",
+		"image": "https://images.pexels.com/photos/6480707/pexels-photo-6480707.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+		"price": "29999",
+		"shipping": false,
+		"colors": ["#FF5733", "#33FF57", "#FFFF00"]
+	},
+	{
+		"title": "modern table",
+		"company": "Modenza",
+		"description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
+		"featured": false,
+		"publishedAt": "2025-06-26T10:07:44.157Z",
+		"category": "Tables",
+		"image": "https://images.pexels.com/photos/447592/pexels-photo-447592.jpeg?auto=compress&cs=tinysrgb&w=1600",
+		"price": "38999",
+		"shipping": true,
+		"colors": ["#33FF57", "#3366FF"]
+	},
+	{
+		"title": "reclining sofa",
+		"company": "Comfora",
+		"description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
+		"featured": false,
+		"publishedAt": "2025-06-26T10:07:44.157Z",
+		"category": "Sofas",
+		"image": "https://images.pexels.com/photos/4316737/pexels-photo-4316737.jpeg?auto=compress&cs=tinysrgb&w=1600",
+		"price": "32999",
+		"shipping": false,
+		"colors": ["#FF5733", "#33FF57", "#3366FF", "#FFFF00"]
+	},
+	{
+		"title": "Sectional Sofa",
+		"company": "Comfora",
+		"description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
+		"featured": false,
+		"publishedAt": "2025-06-26T10:07:44.157Z",
+		"category": "Sofas",
+		"image": "https://images.pexels.com/photos/4857775/pexels-photo-4857775.jpeg?auto=compress&cs=tinysrgb&w=1600",
+		"price": "35999",
+		"shipping": true,
+		"colors": ["#FF5733", "#33FF57", "#3366FF", "#FFFF00"]
+	},
+	{
+		"title": "sleek bed",
+		"company": "Homestead",
+		"description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
+		"featured": false,
+		"publishedAt": "2025-06-26T10:07:44.157Z",
+		"category": "Beds",
+		"image": "https://images.pexels.com/photos/16869701/pexels-photo-16869701/free-photo-of-modern-luxury-real-estate-property-interior-bedroom.jpeg?auto=compress&cs=tinysrgb&w=1600",
+		"price": "53999",
+		"shipping": true,
+		"colors": ["#FFFF00", "#3366FF"]
+	},
+	{
+		"title": "sleek chair",
+		"company": "Luxora",
+		"description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
+		"featured": false,
+		"publishedAt": "2025-06-26T10:07:44.157Z",
+		"category": "Chairs",
+		"image": "https://images.pexels.com/photos/116910/pexels-photo-116910.jpeg?auto=compress&cs=tinysrgb&w=1600",
+		"price": "19999",
+		"shipping": false,
+		"colors": ["#FF5733", "#33FF57", "#3366FF", "#FFFF00"]
+	},
+	{
+		"title": "streamlined table",
+		"company": "Modenza",
+		"description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
+		"featured": false,
+		"publishedAt": "2025-06-26T10:07:44.157Z",
+		"category": "Tables",
+		"image": "https://images.pexels.com/photos/890669/pexels-photo-890669.jpeg?auto=compress&cs=tinysrgb&w=1600",
+		"price": "20999",
+		"shipping": true,
+		"colors": ["#FF5733", "#3366FF"]
+	},
+	{
+		"title": "stylish bed",
+		"company": "Homestead",
+		"description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
+		"featured": false,
+		"publishedAt": "2025-06-26T10:07:44.157Z",
+		"category": "Beds",
+		"image": "https://images.pexels.com/photos/6758398/pexels-photo-6758398.jpeg?auto=compress&cs=tinysrgb&w=1600",
+		"price": "16999",
+		"shipping": true,
+		"colors": ["#FF5733"]
+	},
+	{
+		"title": "Toy Shelf",
+		"company": "Luxora",
+		"description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
+		"featured": false,
+		"publishedAt": "2025-06-26T10:07:44.157Z",
+		"category": "Kids",
+		"image": "https://images.pexels.com/photos/3932929/pexels-photo-3932929.jpeg?auto=compress&cs=tinysrgb&w=1600",
+		"price": "7999",
+		"shipping": false,
+		"colors": ["#33FF57", "#FFFF00"]
+	},
+	{
+		"title": "velvet sofa",
+		"company": "Luxora",
+		"description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
+		"featured": false,
+		"publishedAt": "2025-06-26T10:07:44.157Z",
+		"category": "Chairs",
+		"image": "https://images.pexels.com/photos/4916510/pexels-photo-4916510.jpeg?auto=compress&cs=tinysrgb&w=1600",
+		"price": "28999",
+		"shipping": true,
+		"colors": ["#FF5733", "#33FF57", "#FFFF00"]
+	},
+	{
+		"title": "wooden shelves",
+		"company": "Artifex",
+		"description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
+		"featured": false,
+		"publishedAt": "2025-06-26T10:07:44.157Z",
+		"category": "Kids",
+		"image": "https://images.pexels.com/photos/3932930/pexels-photo-3932930.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+		"price": "11999",
+		"shipping": true,
+		"colors": ["#33FF57", "#3366FF"]
+	}
 ]

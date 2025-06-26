@@ -4,6 +4,7 @@ const Landing = () => {
 	return (
 		<>
 			<Hero />
+			
 		</>
 	);
 };
