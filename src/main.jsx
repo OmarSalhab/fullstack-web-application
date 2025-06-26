@@ -6,15 +6,13 @@ import "./index.css";
 import App from "./App.jsx";
 import store from "./store";
 
-const children = (
-	<>
-		<App />
-		<ToastContainer position="bottom-right" />
-	</>
-);
-
 createRoot(document.getElementById("root")).render(
 	<StrictMode>
-		<Provider store={store} children={children} />
+		<Provider store={store}>
+			<>
+				<App />
+				<ToastContainer position="bottom-right" />
+			</>
+		</Provider>
 	</StrictMode>
 );

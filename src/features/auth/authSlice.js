@@ -7,7 +7,7 @@ const themes = {
 };
 
 const getThemeFromLocalStorage = () => {
-	const theme = localStorage.getItem("theme") || themes.dracula;
+	const theme = localStorage.getItem("theme") || themes.winter;
 	document.documentElement.setAttribute("data-theme", theme);
 	return theme;
 };

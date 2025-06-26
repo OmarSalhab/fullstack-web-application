@@ -24,7 +24,7 @@ import {
 
 //ACTIONS
 
-const protectedLoader = (store) => {
+const protectRoute = (store) => {
 	return () => {
 		const state = store.getState();
 		const user = state.user;
@@ -39,10 +39,12 @@ const router = createBrowserRouter([
 	{
 		path: "/",
 		element: <HomeLayout />,
+		loader: undefined,
 		children: [
 			{
 				index: true,
 				element: <Landing />,
+				
 				loader: undefined,
 			},
 			{
@@ -68,7 +70,7 @@ const router = createBrowserRouter([
 				path: "checkout",
 				element: <Checkout />,
 				loader: async (args) => {
-					protectedLoader(store);
+					protectRoute(store);
 				},
 				action: undefined,
 			},
@@ -76,7 +78,7 @@ const router = createBrowserRouter([
 				path: "orders",
 				element: <Orders />,
 				loader: async (args) => {
-					protectedLoader(store);
+					protectRoute(store);
 				},
 			},
 		],

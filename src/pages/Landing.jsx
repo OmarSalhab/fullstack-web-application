@@ -1,5 +1,11 @@
+import { Hero } from "../components";
+
 const Landing = () => {
-    return ( <button button className="text-white">hello world</button> );
-}
- 
+	return (
+		<>
+			<Hero />
+		</>
+	);
+};
+
 export default Landing;

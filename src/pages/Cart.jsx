@@ -1,8 +1,5 @@
-
-const Cart= ()=> {
-    return ( <>
-    
-    </> );
-}
+const Cart = () => {
+	return <></>;
+};
 
 export default Cart;
